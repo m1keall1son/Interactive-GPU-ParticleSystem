@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		1A3A6C2BF37F4A2F8941F691 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1A90E64E75AB464E9111CC01 /* CinderApp.icns */; };
+		4F4E066017A4336A0023C124 /* drawShader_frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E065C17A4336A0023C124 /* drawShader_frag.glsl */; };
+		4F4E066117A4336A0023C124 /* drawShader_vert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E065D17A4336A0023C124 /* drawShader_vert.glsl */; };
+		4F4E066217A4336A0023C124 /* update_passVert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E065E17A4336A0023C124 /* update_passVert.glsl */; };
+		4F4E066317A4336A0023C124 /* updateShader_frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E065F17A4336A0023C124 /* updateShader_frag.glsl */; };
+		4F4E066517A4337A0023C124 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F4E066417A4337A0023C124 /* CoreFoundation.framework */; };
+		4F4E066717A433840023C124 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F4E066617A433840023C124 /* CoreMIDI.framework */; };
+		4F4E067917A4339B0023C124 /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E067217A4339B0023C124 /* RtMidi.cpp */; };
+		4F4E067A17A4339B0023C124 /* MidiHub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E067517A4339B0023C124 /* MidiHub.cpp */; };
+		4F4E067B17A4339B0023C124 /* MidiIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E067617A4339B0023C124 /* MidiIn.cpp */; };
+		4F4E067C17A4339B0023C124 /* MidiMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E067717A4339B0023C124 /* MidiMessage.cpp */; };
+		4F4E067D17A4339B0023C124 /* MidiOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E067817A4339B0023C124 /* MidiOut.cpp */; };
+		4F4E067E17A4346E0023C124 /* ParticleWall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E065A17A433540023C124 /* ParticleWall.cpp */; };
+		4F4E067F17A434820023C124 /* KinectMask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E065617A433540023C124 /* KinectMask.cpp */; };
+		4F4E068117A435790023C124 /* MVI_3460.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E068017A435790023C124 /* MVI_3460.MOV */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
+		5E13D307D7EB45C38720FB1A /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BA2F07AC454486BA0C6458F /* core.c */; };
+		79C5BB9AAD9E4DF9B9B032B0 /* tilt.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AF55F7185D143E5BBE93E21 /* tilt.c */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A2ED709D0E4E489E8B670EFC /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = 364B41248D4F40BBA6FEB09F /* cameras.c */; };
+		A36379ACD411422AA8447597 /* CinderFreenect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76B7AF9435B945B5814F835F /* CinderFreenect.cpp */; };
+		B6345E35B1604B1384CC4FFC /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A1B8B68B5B48A9AFB699E3 /* IOKit.framework */; };
+		C46545127A4246D6B5611C74 /* usb_libusb10.c in Sources */ = {isa = PBXBuildFile; fileRef = BB5D6CFAEC394F52AE08962D /* usb_libusb10.c */; };
+		D3AF480C1D5A407796FB53A3 /* registration.c in Sources */ = {isa = PBXBuildFile; fileRef = 56865CA410914E8799AD9C9C /* registration.c */; };
+		D64F1055F5DA4447B1CC5255 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87A2D5437B1431587ADBB43 /* QuickTime.framework */; };
+		E147B8F9D8854AEC8F71592C /* illusion_3App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE8988A97D48DFAA4DFDF0 /* illusion_3App.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		0BA2F07AC454486BA0C6458F /* core.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = core.c; path = "../blocks/Cinder-Freenect/src/freenect/core.c"; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1295C1AFE7EC4BECA3231B02 /* CinderFreenect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CinderFreenect.h; path = "../blocks/Cinder-Freenect/src/CinderFreenect.h"; sourceTree = "<group>"; };
+		1A90E64E75AB464E9111CC01 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		1EEE8988A97D48DFAA4DFDF0 /* illusion_3App.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = illusion_3App.cpp; path = ../src/illusion_3App.cpp; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		364B41248D4F40BBA6FEB09F /* cameras.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = cameras.c; path = "../blocks/Cinder-Freenect/src/freenect/cameras.c"; sourceTree = "<group>"; };
+		37A1B8B68B5B48A9AFB699E3 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		448A79AA6B124BE6A7B5E2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F4E065617A433540023C124 /* KinectMask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = KinectMask.cpp; sourceTree = "<group>"; };
+		4F4E065717A433540023C124 /* KinectMask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KinectMask.h; sourceTree = "<group>"; };
+		4F4E065A17A433540023C124 /* ParticleWall.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleWall.cpp; sourceTree = "<group>"; };
+		4F4E065B17A433540023C124 /* ParticleWall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParticleWall.h; sourceTree = "<group>"; };
+		4F4E065C17A4336A0023C124 /* drawShader_frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = drawShader_frag.glsl; path = ../resources/drawShader_frag.glsl; sourceTree = "<group>"; };
+		4F4E065D17A4336A0023C124 /* drawShader_vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = drawShader_vert.glsl; path = ../resources/drawShader_vert.glsl; sourceTree = "<group>"; };
+		4F4E065E17A4336A0023C124 /* update_passVert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = update_passVert.glsl; path = ../resources/update_passVert.glsl; sourceTree = "<group>"; };
+		4F4E065F17A4336A0023C124 /* updateShader_frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = updateShader_frag.glsl; path = ../resources/updateShader_frag.glsl; sourceTree = "<group>"; };
+		4F4E066417A4337A0023C124 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4F4E066617A433840023C124 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		4F4E066A17A4339B0023C124 /* MidiConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiConstants.h; sourceTree = "<group>"; };
+		4F4E066B17A4339B0023C124 /* MidiExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiExceptions.h; sourceTree = "<group>"; };
+		4F4E066C17A4339B0023C124 /* MidiHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiHub.h; sourceTree = "<group>"; };
+		4F4E066D17A4339B0023C124 /* MidiIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiIn.h; sourceTree = "<group>"; };
+		4F4E066E17A4339B0023C124 /* MidiMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiMessage.h; sourceTree = "<group>"; };
+		4F4E066F17A4339B0023C124 /* MidiOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiOut.h; sourceTree = "<group>"; };
+		4F4E067117A4339B0023C124 /* RtError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtError.h; sourceTree = "<group>"; };
+		4F4E067217A4339B0023C124 /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RtMidi.cpp; sourceTree = "<group>"; };
+		4F4E067317A4339B0023C124 /* RtMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtMidi.h; sourceTree = "<group>"; };
+		4F4E067517A4339B0023C124 /* MidiHub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MidiHub.cpp; sourceTree = "<group>"; };
+		4F4E067617A4339B0023C124 /* MidiIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MidiIn.cpp; sourceTree = "<group>"; };
+		4F4E067717A4339B0023C124 /* MidiMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MidiMessage.cpp; sourceTree = "<group>"; };
+		4F4E067817A4339B0023C124 /* MidiOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MidiOut.cpp; sourceTree = "<group>"; };
+		4F4E068017A435790023C124 /* MVI_3460.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = MVI_3460.MOV; path = ../resources/MVI_3460.MOV; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		56865CA410914E8799AD9C9C /* registration.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = registration.c; path = "../blocks/Cinder-Freenect/src/freenect/registration.c"; sourceTree = "<group>"; };
+		6921157DD81F4181AB28C03C /* illusion_3_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = illusion_3_Prefix.pch; sourceTree = "<group>"; };
+		76B7AF9435B945B5814F835F /* CinderFreenect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = CinderFreenect.cpp; path = "../blocks/Cinder-Freenect/src/CinderFreenect.cpp"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* illusion_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = illusion_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF55F7185D143E5BBE93E21 /* tilt.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = tilt.c; path = "../blocks/Cinder-Freenect/src/freenect/tilt.c"; sourceTree = "<group>"; };
+		9D6CCA1B297B4AB6B7F6398E /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		BB5D6CFAEC394F52AE08962D /* usb_libusb10.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = usb_libusb10.c; path = "../blocks/Cinder-Freenect/src/freenect/usb_libusb10.c"; sourceTree = "<group>"; };
+		C87A2D5437B1431587ADBB43 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4E066717A433840023C124 /* CoreMIDI.framework in Frameworks */,
+				4F4E066517A4337A0023C124 /* CoreFoundation.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				B6345E35B1604B1384CC4FFC /* IOKit.framework in Frameworks */,
+				D64F1055F5DA4447B1CC5255 /* QuickTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E066817A4339B0023C124 /* Cinder-MIDI */,
+				4AA962F2F4E840A5B05DC62C /* Cinder-Freenect */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E065617A433540023C124 /* KinectMask.cpp */,
+				4F4E065A17A433540023C124 /* ParticleWall.cpp */,
+				1EEE8988A97D48DFAA4DFDF0 /* illusion_3App.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* illusion_3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* illusion_3 */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E066617A433840023C124 /* CoreMIDI.framework */,
+				4F4E066417A4337A0023C124 /* CoreFoundation.framework */,
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = illusion_3;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E065B17A433540023C124 /* ParticleWall.h */,
+				4F4E065717A433540023C124 /* KinectMask.h */,
+				9D6CCA1B297B4AB6B7F6398E /* Resources.h */,
+				6921157DD81F4181AB28C03C /* illusion_3_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E068017A435790023C124 /* MVI_3460.MOV */,
+				4F4E065C17A4336A0023C124 /* drawShader_frag.glsl */,
+				4F4E065D17A4336A0023C124 /* drawShader_vert.glsl */,
+				4F4E065E17A4336A0023C124 /* update_passVert.glsl */,
+				4F4E065F17A4336A0023C124 /* updateShader_frag.glsl */,
+				1A90E64E75AB464E9111CC01 /* CinderApp.icns */,
+				448A79AA6B124BE6A7B5E2E8 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				37A1B8B68B5B48A9AFB699E3 /* IOKit.framework */,
+				C87A2D5437B1431587ADBB43 /* QuickTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AA962F2F4E840A5B05DC62C /* Cinder-Freenect */ = {
+			isa = PBXGroup;
+			children = (
+				71056E4F52344AE5BD0CE99D /* src */,
+			);
+			name = "Cinder-Freenect";
+			sourceTree = "<group>";
+		};
+		4F4584B6223B4EF9B0A05130 /* freenect */ = {
+			isa = PBXGroup;
+			children = (
+				364B41248D4F40BBA6FEB09F /* cameras.c */,
+				0BA2F07AC454486BA0C6458F /* core.c */,
+				56865CA410914E8799AD9C9C /* registration.c */,
+				9AF55F7185D143E5BBE93E21 /* tilt.c */,
+				BB5D6CFAEC394F52AE08962D /* usb_libusb10.c */,
+			);
+			name = freenect;
+			sourceTree = "<group>";
+		};
+		4F4E066817A4339B0023C124 /* Cinder-MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E066917A4339B0023C124 /* include */,
+				4F4E067017A4339B0023C124 /* libs */,
+				4F4E067417A4339B0023C124 /* src */,
+			);
+			name = "Cinder-MIDI";
+			path = "../blocks/Cinder-MIDI";
+			sourceTree = "<group>";
+		};
+		4F4E066917A4339B0023C124 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E066A17A4339B0023C124 /* MidiConstants.h */,
+				4F4E066B17A4339B0023C124 /* MidiExceptions.h */,
+				4F4E066C17A4339B0023C124 /* MidiHub.h */,
+				4F4E066D17A4339B0023C124 /* MidiIn.h */,
+				4F4E066E17A4339B0023C124 /* MidiMessage.h */,
+				4F4E066F17A4339B0023C124 /* MidiOut.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4F4E067017A4339B0023C124 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E067117A4339B0023C124 /* RtError.h */,
+				4F4E067217A4339B0023C124 /* RtMidi.cpp */,
+				4F4E067317A4339B0023C124 /* RtMidi.h */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		4F4E067417A4339B0023C124 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E067517A4339B0023C124 /* MidiHub.cpp */,
+				4F4E067617A4339B0023C124 /* MidiIn.cpp */,
+				4F4E067717A4339B0023C124 /* MidiMessage.cpp */,
+				4F4E067817A4339B0023C124 /* MidiOut.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		71056E4F52344AE5BD0CE99D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1295C1AFE7EC4BECA3231B02 /* CinderFreenect.h */,
+				76B7AF9435B945B5814F835F /* CinderFreenect.cpp */,
+				4F4584B6223B4EF9B0A05130 /* freenect */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* illusion_3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "illusion_3" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = illusion_3;
+			productInstallPath = "$(HOME)/Applications";
+			productName = illusion_3;
+			productReference = 8D1107320486CEB800E47090 /* illusion_3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "illusion_3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* illusion_3 */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* illusion_3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3A6C2BF37F4A2F8941F691 /* CinderApp.icns in Resources */,
+				4F4E066017A4336A0023C124 /* drawShader_frag.glsl in Resources */,
+				4F4E066117A4336A0023C124 /* drawShader_vert.glsl in Resources */,
+				4F4E066217A4336A0023C124 /* update_passVert.glsl in Resources */,
+				4F4E066317A4336A0023C124 /* updateShader_frag.glsl in Resources */,
+				4F4E068117A435790023C124 /* MVI_3460.MOV in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4E067F17A434820023C124 /* KinectMask.cpp in Sources */,
+				4F4E067E17A4346E0023C124 /* ParticleWall.cpp in Sources */,
+				E147B8F9D8854AEC8F71592C /* illusion_3App.cpp in Sources */,
+				A36379ACD411422AA8447597 /* CinderFreenect.cpp in Sources */,
+				A2ED709D0E4E489E8B670EFC /* cameras.c in Sources */,
+				5E13D307D7EB45C38720FB1A /* core.c in Sources */,
+				D3AF480C1D5A407796FB53A3 /* registration.c in Sources */,
+				79C5BB9AAD9E4DF9B9B032B0 /* tilt.c in Sources */,
+				C46545127A4246D6B5611C74 /* usb_libusb10.c in Sources */,
+				4F4E067917A4339B0023C124 /* RtMidi.cpp in Sources */,
+				4F4E067A17A4339B0023C124 /* MidiHub.cpp in Sources */,
+				4F4E067B17A4339B0023C124 /* MidiIn.cpp in Sources */,
+				4F4E067C17A4339B0023C124 /* MidiMessage.cpp in Sources */,
+				4F4E067D17A4339B0023C124 /* MidiOut.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = illusion_3_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = "-D__MACOSX_CORE__";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
+					"\"../blocks/Cinder-Freenect/lib/macosx/libusb-1.0.a\"",
+				);
+				PRODUCT_NAME = illusion_3;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = illusion_3_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder.a\"",
+					"\"../blocks/Cinder-Freenect/lib/macosx/libusb-1.0.a\"",
+				);
+				PRODUCT_NAME = illusion_3;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../..;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/boost\"",
+					"\"../blocks/Cinder-Freenect/src/freenect\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include \"../blocks/Cinder-Freenect/src\" ../blocks/QuickTime/include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../..;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/boost\"",
+					"\"../blocks/Cinder-Freenect/src/freenect\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include \"../blocks/Cinder-Freenect/src\" ../blocks/QuickTime/include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "illusion_3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "illusion_3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
